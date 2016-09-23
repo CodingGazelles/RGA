@@ -1,0 +1,80 @@
+PODS:
+  - Alamofire (3.5.0)
+  - AlamofireImage (2.5.0):
+    - Alamofire (~> 3.5)
+  - BrightFutures (4.0.1):
+    - Result (~> 2.0)
+  - MRProgress (0.8.3):
+    - MRProgress/ActivityIndicator (= 0.8.3)
+    - MRProgress/Blur (= 0.8.3)
+    - MRProgress/Circular (= 0.8.3)
+    - MRProgress/Icons (= 0.8.3)
+    - MRProgress/NavigationBarProgress (= 0.8.3)
+    - MRProgress/Overlay (= 0.8.3)
+  - MRProgress/ActivityIndicator (0.8.3):
+    - MRProgress/Stopable
+  - MRProgress/Blur (0.8.3):
+    - MRProgress/Helper
+  - MRProgress/Circular (0.8.3):
+    - MRProgress/Helper
+    - MRProgress/ProgressBaseClass
+    - MRProgress/Stopable
+  - MRProgress/Helper (0.8.3)
+  - MRProgress/Icons (0.8.3)
+  - MRProgress/NavigationBarProgress (0.8.3):
+    - MRProgress/ProgressBaseClass
+  - MRProgress/Overlay (0.8.3):
+    - MRProgress/ActivityIndicator
+    - MRProgress/Blur
+    - MRProgress/Circular
+    - MRProgress/Helper
+    - MRProgress/Icons
+  - MRProgress/ProgressBaseClass (0.8.3)
+  - MRProgress/Stopable (0.8.3):
+    - MRProgress/Helper
+  - Realm (1.1.0):
+    - Realm/Headers (= 1.1.0)
+  - Realm/Headers (1.1.0)
+  - RealmSwift (1.1.0):
+    - Realm (= 1.1.0)
+  - Result (2.0.0)
+  - RxCocoa (2.6.0):
+    - RxSwift (~> 2.5)
+  - RxRealm (0.1.8):
+    - RealmSwift (~> 1.0)
+    - RxSwift
+  - RxSwift (2.6.0)
+  - RxViewModel (3.1.3):
+    - RxSwift (~> 2.5)
+  - TPKeyboardAvoiding (1.3)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.5)
+  - AlamofireImage (~> 2.5.0)
+  - BrightFutures
+  - MRProgress
+  - RealmSwift
+  - Result
+  - RxCocoa (~> 2.0)
+  - RxRealm (~> 0.1)
+  - RxSwift (~> 2.0)
+  - RxViewModel (~> 3.0)
+  - TPKeyboardAvoiding
+
+SPEC CHECKSUMS:
+  Alamofire: b70a7352335f8ea5babd0a923eb7e8eacc67b877
+  AlamofireImage: 2d34936e5201270bb17a316a786e90e83b4a249d
+  BrightFutures: 786ff7d16e620eb777cf802e545ef7d6237d77f6
+  MRProgress: 16de7cc9f347e8846797a770db102a323fe7ef09
+  Realm: ceecf1a4540c4ce9efe196fe73fa9855bce05bd8
+  RealmSwift: 838058b2db95b12cb86bd0cf209df642c33fb60a
+  Result: 9e75e1111c774c6ac594e14907b15057053a7959
+  RxCocoa: 89ab00d5753502520227940e3a0e0a0413683c6b
+  RxRealm: e1620fd20f5dc0d14c10e92bcc6c2c70bfb03ebe
+  RxSwift: 77f3a0b15324baa7a1c9bfa9f199648a82424e26
+  RxViewModel: d2a8f05c008b932131f590f34f4afba4b0948f9a
+  TPKeyboardAvoiding: a5138f318c06fb3e151f886e18ce4a72695d9cbe
+
+PODFILE CHECKSUM: 64fb2e7bf50f83bb0823279daa5bb52dbd8bc100
+
+COCOAPODS: 1.0.1

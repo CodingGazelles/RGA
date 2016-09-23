@@ -1,0 +1,9 @@
+
+Podfile.lock
+Pods/
+
+RGA.xcworkspace/contents.xcworkspacedata
+
+*.lock
+
+Podfile.lock

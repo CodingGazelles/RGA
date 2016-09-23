@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ContactCellView" selectionStyle="default" indentationWidth="10" rowHeight="110" id="pic-PM-R6f" customClass="RGAContactCellView" customModule="RGA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pic-PM-R6f" id="raF-py-xaD">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7z-QM-8lL">
+                        <rect key="frame" x="76" y="30" width="61" height="24"/>
+                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
+                        <color key="textColor" red="0.49803921568627452" green="0.23529411764705882" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iYp-PV-kQW" userLabel="Image Border">
+                        <rect key="frame" x="8" y="25" width="60" height="60"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8TI-da-zv5">
+                                <rect key="frame" x="3" y="3" width="54" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="39f-up-DTr"/>
+                                    <constraint firstAttribute="width" constant="54" id="H5e-IO-1DB"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.68627450980000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8TI-da-zv5" firstAttribute="centerX" secondItem="iYp-PV-kQW" secondAttribute="centerX" id="PBG-Hj-OVy"/>
+                            <constraint firstItem="8TI-da-zv5" firstAttribute="centerY" secondItem="iYp-PV-kQW" secondAttribute="centerY" id="cvB-db-eCt"/>
+                            <constraint firstAttribute="height" constant="60" id="tgy-nQ-Ia1"/>
+                            <constraint firstAttribute="width" constant="60" id="z2z-1t-Jsm"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arobase" translatesAutoresizingMaskIntoConstraints="NO" id="D95-zY-J3x">
+                        <rect key="frame" x="76" y="59" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="Bsr-k9-NwI"/>
+                            <constraint firstAttribute="width" constant="15" id="yfi-x1-P0M"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICH-8Y-C5G">
+                        <rect key="frame" x="95" y="58" width="217" height="17"/>
+                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="14"/>
+                        <color key="textColor" red="0.94117647059999998" green="0.68627450980000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSj-VB-DLK" userLabel="Contact Age">
+                        <rect key="frame" x="141" y="36" width="45" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="4oL-zd-Uhi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="14"/>
+                        <color key="textColor" red="0.49803921569999998" green="0.23529411759999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iYp-PV-kQW" firstAttribute="leading" secondItem="raF-py-xaD" secondAttribute="leading" constant="8" id="4Gy-vO-E5c"/>
+                    <constraint firstItem="y7z-QM-8lL" firstAttribute="centerY" secondItem="raF-py-xaD" secondAttribute="centerY" constant="-13" id="6Nd-GJ-e6y"/>
+                    <constraint firstAttribute="trailing" secondItem="ICH-8Y-C5G" secondAttribute="trailing" constant="8" id="6TB-hR-oH3"/>
+                    <constraint firstItem="sSj-VB-DLK" firstAttribute="leading" secondItem="y7z-QM-8lL" secondAttribute="trailing" constant="4" id="875-wl-Iio"/>
+                    <constraint firstItem="D95-zY-J3x" firstAttribute="leading" secondItem="y7z-QM-8lL" secondAttribute="leading" id="X7H-AK-J50"/>
+                    <constraint firstItem="ICH-8Y-C5G" firstAttribute="top" secondItem="y7z-QM-8lL" secondAttribute="bottom" constant="4" id="hPf-EY-wXf"/>
+                    <constraint firstItem="sSj-VB-DLK" firstAttribute="baseline" secondItem="y7z-QM-8lL" secondAttribute="baseline" id="lXe-Eo-n69"/>
+                    <constraint firstItem="y7z-QM-8lL" firstAttribute="leading" secondItem="iYp-PV-kQW" secondAttribute="trailing" constant="8" id="sMC-Kw-B0d"/>
+                    <constraint firstItem="iYp-PV-kQW" firstAttribute="centerY" secondItem="raF-py-xaD" secondAttribute="centerY" id="tYP-l5-RFO"/>
+                    <constraint firstItem="ICH-8Y-C5G" firstAttribute="bottom" secondItem="D95-zY-J3x" secondAttribute="bottom" constant="1" id="wka-hA-fFO"/>
+                    <constraint firstItem="ICH-8Y-C5G" firstAttribute="leading" secondItem="D95-zY-J3x" secondAttribute="trailing" constant="4" id="xAj-3n-EYi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.99607843139999996" green="0.95294117649999999" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="contactAge" destination="sSj-VB-DLK" id="Bhb-L4-mst"/>
+                <outlet property="contactEmail" destination="ICH-8Y-C5G" id="qdu-Hu-ng5"/>
+                <outlet property="contactImage" destination="8TI-da-zv5" id="edv-mb-ENd"/>
+                <outlet property="contactName" destination="y7z-QM-8lL" id="yAD-s0-XPl"/>
+            </connections>
+            <point key="canvasLocation" x="209" y="264"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arobase" width="15" height="15"/>
+    </resources>
+</document>
