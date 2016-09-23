@@ -1,6 +1,6 @@
 #Descrição do aplicativo
 
-O aplicativo se apresenta com duas telas conforme o modelo ‘Master/Detail’. A primeira tela (a tela ‘Master’) apresenta a lisa de todos os contatos. A segunda tela serve para mostrar os detalhes de um contato só.
+O aplicativo se apresenta com duas telas conforme o modelo ‘Master/Detail’. A primeira tela (a tela ‘Master’) apresenta a lista de todos os contatos. A segunda tela serve para mostrar os detalhes de um contato só.
 
 A criação de um contato fica na primeira tela.
 As funcionalidades de modificação e a supressão de um usuário são accessíveis na tela de detalhes.
@@ -34,6 +34,10 @@ Todos os frameworks foram integrados com CocoaPods. É necessário executar o co
 Calculo das imagens no fundo da segunda tela: calcular essas imagens em um ‘Thread’ assíncrono afim de não para a transição entre as telas.
 
 Armazenamento das alterações: as alterações não estão gravadas.
+
+Melhorar as interfaces.
+
+Ordenar os contatos.
 
 
 

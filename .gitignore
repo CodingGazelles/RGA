@@ -1,9 +1,7 @@
 
 Podfile.lock
 Pods/
-
-RGA.xcworkspace/contents.xcworkspacedata
+RGA.xcworkspace/
 
 *.lock
 
-Podfile.lock

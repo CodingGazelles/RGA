@@ -20,11 +20,11 @@
 		DFA359681D916DE00014CFF4 /* BusinessObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA359651D916DE00014CFF4 /* BusinessObjects.swift */; };
 		DFA359691D916DE00014CFF4 /* DataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA359661D916DE00014CFF4 /* DataStack.swift */; };
 		DFA3596A1D916DE00014CFF4 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA359671D916DE00014CFF4 /* URLs.swift */; };
-		DFFE798C1D9457F20088E970 /* ContactCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFFE798B1D9457F20088E970 /* ContactCellView.xib */; };
-		DFFE798E1D9458170088E970 /* ContactCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFE798D1D9458170088E970 /* ContactCellView.swift */; };
-		DFFE79901D9469200088E970 /* UIView+RGA.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFE798F1D9469200088E970 /* UIView+RGA.swift */; };
 		DFFE79921D94E1430088E970 /* MasterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFE79911D94E1430088E970 /* MasterViewModel.swift */; };
-		DFFE79951D94ED450088E970 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFE79941D94ED450088E970 /* DetailViewModel.swift */; };
+		DFFE79991D95950D0088E970 /* ContactCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFE79961D95950D0088E970 /* ContactCellView.swift */; };
+		DFFE799A1D95950D0088E970 /* ContactCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFFE79971D95950D0088E970 /* ContactCellView.xib */; };
+		DFFE799B1D95950D0088E970 /* UIView+RGA.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFE79981D95950D0088E970 /* UIView+RGA.swift */; };
+		DFFE799D1D95951B0088E970 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFE799C1D95951B0088E970 /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,11 +66,11 @@
 		DFA359651D916DE00014CFF4 /* BusinessObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BusinessObjects.swift; path = DataStack/BusinessObjects.swift; sourceTree = "<group>"; };
 		DFA359661D916DE00014CFF4 /* DataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStack.swift; path = DataStack/DataStack.swift; sourceTree = "<group>"; };
 		DFA359671D916DE00014CFF4 /* URLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLs.swift; path = DataStack/URLs.swift; sourceTree = "<group>"; };
-		DFFE798B1D9457F20088E970 /* ContactCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactCellView.xib; sourceTree = "<group>"; };
-		DFFE798D1D9458170088E970 /* ContactCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCellView.swift; sourceTree = "<group>"; };
-		DFFE798F1D9469200088E970 /* UIView+RGA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+RGA.swift"; sourceTree = "<group>"; };
 		DFFE79911D94E1430088E970 /* MasterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterViewModel.swift; path = ViewModel/MasterViewModel.swift; sourceTree = "<group>"; };
-		DFFE79941D94ED450088E970 /* DetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		DFFE79961D95950D0088E970 /* ContactCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactCellView.swift; path = UI/ContactCellView.swift; sourceTree = "<group>"; };
+		DFFE79971D95950D0088E970 /* ContactCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ContactCellView.xib; path = UI/ContactCellView.xib; sourceTree = "<group>"; };
+		DFFE79981D95950D0088E970 /* UIView+RGA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+RGA.swift"; path = "UI/UIView+RGA.swift"; sourceTree = "<group>"; };
+		DFFE799C1D95951B0088E970 /* DetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewModel.swift; path = ViewModel/DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,13 +119,13 @@
 		DF30AB731D94099200186916 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				DFFE79961D95950D0088E970 /* ContactCellView.swift */,
+				DFFE79971D95950D0088E970 /* ContactCellView.xib */,
+				DFFE79981D95950D0088E970 /* UIView+RGA.swift */,
 				DFA3593A1D916C0E0014CFF4 /* Main.storyboard */,
 				DFA3593F1D916C0E0014CFF4 /* LaunchScreen.storyboard */,
 				DF30AB761D9409EA00186916 /* DetailViewController.swift */,
 				DF30AB771D9409EA00186916 /* MasterViewController.swift */,
-				DFFE798B1D9457F20088E970 /* ContactCellView.xib */,
-				DFFE798D1D9458170088E970 /* ContactCellView.swift */,
-				DFFE798F1D9469200088E970 /* UIView+RGA.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -197,8 +197,8 @@
 		DFFE79931D94E1470088E970 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				DFFE799C1D95951B0088E970 /* DetailViewModel.swift */,
 				DFFE79911D94E1430088E970 /* MasterViewModel.swift */,
-				DFFE79941D94ED450088E970 /* DetailViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -314,9 +314,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFA359411D916C0E0014CFF4 /* LaunchScreen.storyboard in Resources */,
+				DFFE799A1D95950D0088E970 /* ContactCellView.xib in Resources */,
 				DFA3593E1D916C0E0014CFF4 /* Assets.xcassets in Resources */,
 				DFA3593C1D916C0E0014CFF4 /* Main.storyboard in Resources */,
-				DFFE798C1D9457F20088E970 /* ContactCellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,14 +392,14 @@
 				DFFE79921D94E1430088E970 /* MasterViewModel.swift in Sources */,
 				DFA359691D916DE00014CFF4 /* DataStack.swift in Sources */,
 				DFA3596A1D916DE00014CFF4 /* URLs.swift in Sources */,
-				DFFE798E1D9458170088E970 /* ContactCellView.swift in Sources */,
+				DFFE799B1D95950D0088E970 /* UIView+RGA.swift in Sources */,
 				DFA359681D916DE00014CFF4 /* BusinessObjects.swift in Sources */,
 				DF30AB781D9409EA00186916 /* DetailViewController.swift in Sources */,
 				DF30AB791D9409EA00186916 /* MasterViewController.swift in Sources */,
+				DFFE799D1D95951B0088E970 /* DetailViewModel.swift in Sources */,
 				DF30AB7A1D94169000186916 /* WebServices.swift in Sources */,
-				DFFE79901D9469200088E970 /* UIView+RGA.swift in Sources */,
-				DFFE79951D94ED450088E970 /* DetailViewModel.swift in Sources */,
 				DFA359351D916C0E0014CFF4 /* AppDelegate.swift in Sources */,
+				DFFE79991D95950D0088E970 /* ContactCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
