@@ -33,8 +33,6 @@ Todos os frameworks foram integrados com CocoaPods. É necessário executar o co
 
 Calculo das imagens no fundo da segunda tela: calcular essas imagens em um ‘Thread’ assíncrono afim de não para a transição entre as telas.
 
-Armazenamento das alterações: as alterações não estão gravadas.
-
 Melhorar as interfaces.
 
 Ordenar os contatos.

@@ -32,6 +32,7 @@ class RGADetailViewModel: RxViewModel {
     var shouldEditVariable: Variable<Bool>
     
     
+    
     // Private
     var dataStack: RGADataStack
     private let disposeBag = DisposeBag()
@@ -80,7 +81,14 @@ class RGADetailViewModel: RxViewModel {
     */
     func doneEditing() {
         self.shouldEditVariable.value = false
-        dataStack.writeContact(contact)
+        
+        dataStack.update {
+            
+            self.contact.name = self.contactNameVariable.value
+            self.contact.email = self.contactEmailVariable.value
+            self.contact.bio = self.contactBioVariable.value
+            
+        }
     }
     
 }

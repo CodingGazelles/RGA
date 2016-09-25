@@ -47,10 +47,26 @@ class RGADataStack {
     }
     
     
-    
     // MARK: - DB CRUD operations
     /*
-     Insert or Update
+     Update
+    */
+    func update( updates: () -> Void ) -> Result< NoResult, RGADataStackError> {
+        do {
+            try self.realm.write {
+                updates()
+            }
+        } catch let error as NSError {
+            return .Failure(RGADataStackError( rootError: error))
+        }
+        
+        return .Success(NoResult())
+        
+    }
+    
+    
+    /*
+     Insert
     */
     func writeContact( contact: RGAContact) -> Result< NoResult, RGADataStackError> {
         

@@ -190,6 +190,12 @@ class RGADetailViewController: UIViewController {
                 self.viewModel.doneEditing()
                 
                 
+                // remove focus
+                self.nameTextField.resignFirstResponder()
+                self.emailTextField.resignFirstResponder()
+                self.bioTextView.resignFirstResponder()
+                
+                
                 // Hide borders
                 self.nameTextField.superview!.layer.borderWidth = 0
                 self.emailTextField.superview!.layer.borderWidth = 0
