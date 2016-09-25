@@ -10,6 +10,7 @@ import UIKit
 import CoreImage
 import RxSwift
 import RxCocoa
+import BrightFutures
 
 
 
@@ -87,25 +88,10 @@ class RGADetailViewController: UIViewController {
                 
                 
                 // Set background image
-                let ciImage = CIImage(image: image)
-                
-                let monoFilter = CIFilter(name: "CIPhotoEffectMono")
-                monoFilter!.setValue(ciImage, forKey: kCIInputImageKey)
-                var cgimg = self.context.createCGImage(monoFilter!.outputImage!, fromRect: monoFilter!.outputImage!.extent)
-                
-                let ctFilter = CIFilter( name: "CIColorControls")
-                ctFilter!.setValue(CIImage(CGImage: cgimg), forKey: kCIInputImageKey)
-                ctFilter!.setValue( 0.4, forKey: kCIInputBrightnessKey)
-                cgimg = self.context.createCGImage(ctFilter!.outputImage!, fromRect: ctFilter!.outputImage!.extent)
-                
-                self.backgroundImage.image = UIImage(CGImage: cgimg)
-                
-                
-//                // Set TextFields color
-//                let avFilter = CIFilter(name: "CIAreaAverage")
-//                avFilter!.setValue(ciImage, forKey: kCIInputImageKey)
-//                cgimg = self.context.createCGImage(ctFilter!.outputImage!, fromRect: ctFilter!.outputImage!.extent)
-                
+                self.computeBackgroundImage(image)
+                    .onSuccess { image in
+                        self.backgroundImage.image = image
+                    }
                 
             }
             .addDisposableTo( disposeBag)
@@ -239,6 +225,41 @@ class RGADetailViewController: UIViewController {
 //        nameTextField.superview!.bounds = CGRectInset(nameTextField.superview!.frame, 10.0, 10.0)
 //        emailTextField.superview!.bounds = CGRectInset(emailTextField.superview!.frame, 10.0, 10.0)
         
+        
+    }
+    
+    
+    /*
+    */
+    private func computeBackgroundImage( image: UIImage) -> Future<UIImage, RGACoreImageError> {
+        
+        let promise = Promise<UIImage, RGACoreImageError>()
+        
+        Queue.global.context {
+            
+            
+            let ciImage = CIImage(image: image)
+            
+            let monoFilter = CIFilter(name: "CIPhotoEffectMono")
+            monoFilter!.setValue(ciImage, forKey: kCIInputImageKey)
+            var cgimg = self.context.createCGImage(monoFilter!.outputImage!, fromRect: monoFilter!.outputImage!.extent)
+            
+            let ctFilter = CIFilter( name: "CIColorControls")
+            ctFilter!.setValue(CIImage(CGImage: cgimg), forKey: kCIInputImageKey)
+            ctFilter!.setValue( 0.4, forKey: kCIInputBrightnessKey)
+            cgimg = self.context.createCGImage(ctFilter!.outputImage!, fromRect: ctFilter!.outputImage!.extent)
+            
+            //                // Set TextFields color
+            //                let avFilter = CIFilter(name: "CIAreaAverage")
+            //                avFilter!.setValue(ciImage, forKey: kCIInputImageKey)
+            //                cgimg = self.context.createCGImage(ctFilter!.outputImage!, fromRect: ctFilter!.outputImage!.extent)
+            
+            promise.success( UIImage(CGImage: cgimg))
+            
+        }
+        
+        
+        return promise.future
         
     }
     

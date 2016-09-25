@@ -229,6 +229,7 @@ class RGAGetImageError: RGADataStackError {}
 class RGAGetJsonError: RGADataStackError {}
 class RGASaveError: RGADataStackError {}
 class RGAParserError: RGADataStackError {}
+class RGACoreImageError: RGAError {}
 
 
 

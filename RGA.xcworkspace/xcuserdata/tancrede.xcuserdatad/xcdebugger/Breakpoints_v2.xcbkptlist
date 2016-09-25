@@ -124,11 +124,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RGA/UI/DetailViewController.swift"
-            timestampString = "496338715.638877"
+            timestampString = "496459489.081932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "186"
-            endingLineNumber = "186"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
             landmarkName = "bindViewModel()"
             landmarkType = "5">
          </BreakpointContent>
@@ -155,22 +155,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "RGA/UI/DetailViewController.swift"
-            timestampString = "496331222.348357"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
-            landmarkName = "bindViewModel()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "RGA/DetailViewModel.swift"
             timestampString = "496336581.033039"
             startingColumnNumber = "9223372036854775807"
@@ -188,11 +172,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RGA/UI/DetailViewController.swift"
-            timestampString = "496337072.153668"
+            timestampString = "496459489.081932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
             landmarkName = "bindViewModel()"
             landmarkType = "5">
          </BreakpointContent>
@@ -236,11 +220,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RGA/UI/DetailViewController.swift"
-            timestampString = "496337392.330422"
+            timestampString = "496459489.081932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "bindViewModel()"
             landmarkType = "5">
          </BreakpointContent>
